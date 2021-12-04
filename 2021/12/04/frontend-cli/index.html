@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="前端脚手架前言  最近在研究前端工程化体系的搭建，而脚手架正是前端工程体系链的第一环，是前端开发经常使用的工具，能够助力团队提效。系统地了解脚手架的基本原理，也许能够对以后公司和部门的前端项目基建起到帮助。
+  本文首先对脚手架做了一个基本的介绍，接着分析了市面上常见的一些脚手架方案，我自己也模仿这"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Leo"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="Leo&#39;s blog"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="前端脚手架前言  最近在研究前端工程化体系的搭建，而脚手架正是前端工程体系链的第一环，是前端开发经常使用的工具，能够助力团队提效。系统地了解脚手架的基本原理，也许能够对以后公司和部门的前端项目基建起到帮助。
+  本文首先对脚手架做了一个基本的介绍，接着分析了市面上常见的一些脚手架方案，我自己也模仿这"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="Leo&#39;s blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="website"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="https://leo2436.github.ioimg/home-bg.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="https://leo2436.github.ioimg/home-bg.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>Leo&#39;s blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Configurable Title</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" rel="noopener" href="https://github.com/klugjo/hexo-theme-clean-blog">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Untitled</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2021-12-04
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h3 id="前端脚手架"><a href="#前端脚手架" class="headerlink" title="前端脚手架"></a><strong>前端脚手架</strong></h3><h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>  最近在研究前端工程化体系的搭建，而脚手架正是前端工程体系链的第一环，是前端开发经常使用的工具，能够助力团队提效。系统地了解脚手架的基本原理，也许能够对以后公司和部门的前端项目基建起到帮助。</p>
+<p>  本文首先对脚手架做了一个基本的介绍，接着分析了市面上常见的一些脚手架方案，我自己也模仿这些方案的基本功能写了一个脚手架，因此会对脚手架的技术架构和部分细节进行描述。<em><strong>下面就一起来了解一下吧～</strong></em></p>
+<h4 id="一-脚手架的介绍"><a href="#一-脚手架的介绍" class="headerlink" title="一. 脚手架的介绍"></a>一. 脚手架的介绍</h4><h5 id="1-脚手架是什么"><a href="#1-脚手架是什么" class="headerlink" title="1. 脚手架是什么"></a>1. 脚手架是什么</h5><p>  简单来说，脚手架就是把项目基本框架搭好的一个<em><strong>工作平台</strong></em>，通常所说的脚手架包括项目依赖、文件模板、文件结构和各种配置等等。让你不用从零开始配置一个项目，尽可能快的进行业务开发。这针对的是整个项目，但广义来说，几个文件，甚至一个文件，一个代码段也可以算作是一个脚手架。</p>
+<h5 id="2-脚手架存在的意义"><a href="#2-脚手架存在的意义" class="headerlink" title="2. 脚手架存在的意义"></a>2. 脚手架存在的意义</h5><p>  脚手架的意义就是为减少重复性工作，让我们摆脱<em><strong>ctrl + c和 ctrl + v</strong></em>。这是因为首先手动的重复性工作，不仅繁琐而且浪费时间。其次，copy过来的模板容易存在无关的代码。最后，项目中有很多需要配置的地方，容易忽略一些配置点，进而埋坑。</p>
+<p>  使用脚手架，可以减少重复性工作，对于很多系统，他们的页面相似度非常高，所以就可以基于一套模板来搭建。其次可以规范项目开发文件结构，统一团队开发风格，便于后期维护，降低新人上手成本。此外，一键式前端项目的创建、配置、本地开发、插件扩展，可以让开发者更多地专注于业务。</p>
+<h4 id="二-常见的脚手架方案"><a href="#二-常见的脚手架方案" class="headerlink" title="二. 常见的脚手架方案"></a>二. 常见的脚手架方案</h4><h5 id="1-基于IDE搭建的脚手架"><a href="#1-基于IDE搭建的脚手架" class="headerlink" title="1. 基于IDE搭建的脚手架"></a>1. 基于IDE搭建的脚手架</h5><p>  IDE可以帮助我们快速生成代码段，只需配置常见的snippet即可实现，下面以vscode为例，实现一个react + typescript的hooks文件：</p>
+<h6 id="①-准备代码片段"><a href="#①-准备代码片段" class="headerlink" title="①. 准备代码片段"></a>①. 准备代码片段</h6><p>进入preferences -&gt; users snippets -&gt; typescipt react：</p>
+<img src="/Users/liang.chen/Library/Application Support/typora-user-images/image-20210811214800253.png" alt="image-20210811214800253" style="zoom:50%;" />
+
+<p>在JSON文件加入以下配置：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;Typescript React Function Component&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;prefix&quot;</span>: <span class="string">&quot;rh&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;body&quot;</span>: [</span><br><span class="line">      <span class="string">&quot;import React from &#x27;react&#x27;&quot;</span>,</span><br><span class="line">      <span class="string">&quot;&quot;</span>,</span><br><span class="line">      <span class="string">&quot;interface $&#123;TM_FILENAME_BASE&#125;Props &#123;&quot;</span>,</span><br><span class="line">      <span class="string">&quot;$1&quot;</span>,</span><br><span class="line">      <span class="string">&quot;&#125;&quot;</span>,</span><br><span class="line">      <span class="string">&quot;&quot;</span>,</span><br><span class="line">      <span class="string">&quot;export const $TM_FILENAME_BASE: React.FC&lt;$&#123;TM_FILENAME_BASE&#125;Props&gt; = (&#123;$2&#125;) =&gt; &#123;&quot;</span>,</span><br><span class="line">      <span class="string">&quot;\t\treturn ($3);&quot;</span>,</span><br><span class="line">      <span class="string">&quot;&#125;&quot;</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">&quot;description&quot;</span>: <span class="string">&quot;Typescript React Function Component&quot;</span></span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>其中，$+number代表创建后<em><strong>光标的位置</strong></em>，$TM_FILENAME_BASE是变量，代表<em><strong>文件除掉后缀后的名称</strong></em>。</p>
+</blockquote>
+<h6 id="②-通过prefix生成代码片段"><a href="#②-通过prefix生成代码片段" class="headerlink" title="②. 通过prefix生成代码片段"></a>②. 通过prefix生成代码片段</h6><p>​    然后，我们只需要创建一个文件，如Demo.tsx, 输入prefix rh，就能快速生成以下代码片段：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">import React from &#x27;react&#x27;</span><br><span class="line"></span><br><span class="line">interface DemoProps &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">export const Demo: React.FC&lt;DemoProps&gt; = (&#123;&#125;) =&gt; &#123;</span><br><span class="line">    return ();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​    代码段类型的脚手架我们通常都会叫他代码模板，实际上这也可以算作一种脚手架。</p>
+<p>​    实现这种类型的脚手架还是很简单的，同时也可以提高不少开发效率，毕竟日常开发的重复代码还是挺多的。</p>
+<h5 id="2-基于脚本搭建脚手架"><a href="#2-基于脚本搭建脚手架" class="headerlink" title="2. 基于脚本搭建脚手架"></a>2. 基于脚本搭建脚手架</h5><p>​    目前主流前端脚手架都基于node编写，如vue-cli和create-react-app。这里主要讲讲两个脚手架的共同点和不同点，具体的技术细节在之后自己实现的脚手架中提及。</p>
+<p>​    它们的功能都是生成一个通用的目录结构，并配上构建、编译、检查等工程环境。大致流程如下：</p>
+<ol>
+<li>解析用户输入的命令；</li>
+<li>根据用户的输入生成对应的模板项目；</li>
+<li>安装该模板所需要的依赖。</li>
+</ol>
+<p>​    create-react-app主要负责解析命令，由react-scripts提供模板与模板所需要的项目工程化配置。而vue-cli的实现与create-react-app稍微有点不一样。首先vue-cli新建工程是那种一步一步问答式命令来进行的，而 create-react-app是一键生成的；vue-cli的项目模板来源于github，支持多种模板通过git下载的，而create-react-app模板来自于react-scripts目录下的两个文件夹；vue-cli构建的项目其构建编译是直接依赖于browserify或webpack这样的构建工具，配置是完全暴露给使用者的，可以再次自定义，而create-react-app是基于webpack进行了一层封装，然后将其暴露为一种新的构建命令，也可以运行npm run eject将配置暴露出来。</p>
+<h5 id="3-基于yeoman搭建脚手架"><a href="#3-基于yeoman搭建脚手架" class="headerlink" title="3. 基于yeoman搭建脚手架"></a>3. 基于yeoman搭建脚手架</h5><p>​    Yeoman是一个现代WEB应用程序的WEB脚手架工具。相比较于create-react-app、vue-cli等专注于某一个框架的脚手架工具而言，Yeoman是一个更加通用的脚手架工具。</p>
+<p>​    下面我们就从Yeoman官方的generator repo中拉取一个node项目模板，搭建一个脚手架。</p>
+<p>Step1：安装Yeoman</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn global add yo</span><br></pre></td></tr></table></figure>
+
+<p>Step2：安装项目模板：generator</p>
+<p>​    如下示例安装一个node项目模板</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// generator repo https://yeoman.io/generators/</span><br><span class="line">yarn global add generator<span class="literal">-node</span></span><br></pre></td></tr></table></figure>
+
+<p>Step3：使用yo运行generator创建模板项目</p>
+<p>​    项目模板名去掉generator-，即可作为yo的参数创建项目</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yo node</span><br></pre></td></tr></table></figure>
+
+<h4 id="三-如何自己实现一个脚手架"><a href="#三-如何自己实现一个脚手架" class="headerlink" title="三. 如何自己实现一个脚手架"></a>三. 如何自己实现一个脚手架</h4><h5 id="1-基本思路"><a href="#1-基本思路" class="headerlink" title="1. 基本思路"></a>1. 基本思路</h5><p>​    根据以上脚手架的描述，整理出要实现的脚手架的基本功能：</p>
+<ul>
+<li><p>用户输入命令，准备创建项目。</p>
+</li>
+<li><p>脚手架解析用户命令，并弹出交互语句，询问用户需要创建的模板和版本。</p>
+</li>
+<li><p>脚手架根据用户的选择下载项目模板，生成文件。</p>
+</li>
+<li><p>脚手架根据用户的输入修改 <code>package.json</code> 文件，执行 <code>npm install</code> 命令安装依赖。</p>
+<p>以下是脚手架执行的流程图：</p>
+</li>
+</ul>
+<p>![image-20210811224009178](/Users/liang.chen/Library/Application Support/typora-user-images/image-20210811224009178.png)</p>
+<h5 id="2-项目依赖分析"><a href="#2-项目依赖分析" class="headerlink" title="2. 项目依赖分析"></a>2. 项目依赖分析</h5><p>​    实际生产中搭建一个脚手架或者阅读其他脚手架源码的时候需要了解下面这些工具库：</p>
+<ul>
+<li><strong>Commander.js: 命令行自定义指令</strong></li>
+<li><strong>Inquirer: 命令行询问用户问题，记录回答结果</strong></li>
+<li><strong>ejs: 模版引擎，增加变量占位符</strong></li>
+<li><strong>Chalk: 控制台输出内容样式美化</strong></li>
+<li><strong>Ora: 控制台 loading 样式</strong></li>
+<li><strong>Download-git-repo: 用于下载github远程模版</strong></li>
+<li><strong>fs-extra: fs-extra 是对 fs 模块的扩展，支持 promise</strong> </li>
+<li><strong>Babel-cli/babel-env: 开发依赖，用于转换ES6语法</strong></li>
+</ul>
+<h5 id="3-准备脚手架模板"><a href="#3-准备脚手架模板" class="headerlink" title="3. 准备脚手架模板"></a>3. 准备脚手架模板</h5><p>​    项目模板存放位置有两种，第一种是和脚手架打包在一起，这种方式每次创建项目的时候都是从本地拷贝的速度很快。第二种是将项目模板存在git仓库，这种方式每次创建项目的时候都是通过某个地址<strong>动态下载</strong>的，项目模板更新方便。</p>
+<p>​    这里我选择第二种方式存放模板，建立了一个vue3.0的项目模板并存放在私有仓库。项目结构如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">vue3-template</span><br><span class="line"></span><br><span class="line">├─ .gitignore</span><br><span class="line"></span><br><span class="line">├─ README.md</span><br><span class="line"></span><br><span class="line">├─ babel.config.js</span><br><span class="line"></span><br><span class="line">├─ node_modules</span><br><span class="line"></span><br><span class="line">├─ package-lock.json</span><br><span class="line"></span><br><span class="line">├─ package.json</span><br><span class="line"></span><br><span class="line">├─ public</span><br><span class="line"></span><br><span class="line">│  └─ index.html</span><br><span class="line"></span><br><span class="line">└─ src</span><br><span class="line"></span><br><span class="line">   ├─ App.vue</span><br><span class="line"></span><br><span class="line">   ├─ components</span><br><span class="line"></span><br><span class="line">   │  └─ HelloWorld.vue</span><br><span class="line"></span><br><span class="line">   ├─ index.js</span><br><span class="line"></span><br><span class="line">   └─ main.js</span><br></pre></td></tr></table></figure>
+
+<p>​    在package.json中，将name和author两个字段设置为模板名称，在后续接受用户输入时进行替换：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;demoName&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;author&quot;</span>: <span class="string">&quot;demoAuthor&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="4-创建脚手架项目"><a href="#4-创建脚手架项目" class="headerlink" title="4. 创建脚手架项目"></a>4. 创建脚手架项目</h5><p>​    通过npm init创建项目，脚手架随便起个名字，就叫做nerv-cli吧。基本配置如下：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;nerv-cli&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;1.0.2&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;description&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;main&quot;</span>: <span class="string">&quot;index.js&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;bin&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;nerv&quot;</span>: <span class="string">&quot;./bin/cli.js&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">&quot;scripts&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;compile&quot;</span>: <span class="string">&quot;babel src -d dist&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;watch&quot;</span>: <span class="string">&quot;npm run compile -- --watch&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;test&quot;</span>: <span class="string">&quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">&quot;keywords&quot;</span>: [],</span><br><span class="line">  <span class="attr">&quot;author&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;license&quot;</span>: <span class="string">&quot;ISC&quot;</span>,</span><br><span class="line">  <span class="attr">&quot;dependencies&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;axios&quot;</span>: <span class="string">&quot;^0.21.1&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;chalk&quot;</span>: <span class="string">&quot;^4.1.2&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;commander&quot;</span>: <span class="string">&quot;^8.1.0&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;download-git-repo&quot;</span>: <span class="string">&quot;^3.0.2&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;fs-extra&quot;</span>: <span class="string">&quot;^10.0.0&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;inquirer&quot;</span>: <span class="string">&quot;^8.1.2&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">&quot;devDependencies&quot;</span>: &#123;</span><br><span class="line">    <span class="attr">&quot;babel-cli&quot;</span>: <span class="string">&quot;^6.26.0&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;babel-preset-env&quot;</span>: <span class="string">&quot;^1.7.0&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>​    我们将脚手架业务逻辑写在src目录下，并通过npm run watch用babel实时编译到dist目录，入口文件bin/cli.js引入dist目录的main文件即可。</p>
+<h5 id="5-配置全局CLI命令"><a href="#5-配置全局CLI命令" class="headerlink" title="5. 配置全局CLI命令"></a>5. 配置全局CLI命令</h5><p>接下来，把一个普通模块配置成一个全局模块。这样做的目的是为了让其它模块可以该模块访问并且调用，可以通过以下步骤实现：</p>
+<ul>
+<li>为入口cli脚本加上文件头，这行代码可以<strong>告诉系统该脚本由 node 来执行</strong>。</li>
+</ul>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">bin/cli.js</span><br><span class="line"><span class="comment">#!/usr/bin/env node</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>配置package.json：配置bin选项 { “命令名称”: “入口文件路径” }。bin 里的命令是可执行命令，模块安装的时候如果是全局安装，则 npm 会为 bin 中配置的文件创建一个<strong>全局软连接</strong>，在命令行工具里可以直接执行。</li>
+</ul>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;bin&quot;</span>: &#123;</span><br><span class="line">	<span class="string">&quot;nerv&quot;</span>: <span class="string">&quot;./bin/cli.js&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>链到全局</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yarn link</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>测试使用</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nerv</span><br></pre></td></tr></table></figure>
+
+<p>​    通过以上步骤，即可在其它模块中使用配置的bin命令调用这个cli模块，它会自动找到这个cli模块的这个入口文件并执行脚手架脚本。</p>
+<p>​    如果需要方便其它人使用，则可通过npm publish发布到npm repository中。</p>
+<h5 id="6-处理用户输入的命令行"><a href="#6-处理用户输入的命令行" class="headerlink" title="6. 处理用户输入的命令行"></a>6. 处理用户输入的命令行</h5><p>​    我们通过commander来处理用户输入的命令行：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> program <span class="keyword">from</span> <span class="string">&quot;commander&quot;</span>;</span><br><span class="line"></span><br><span class="line">program</span><br><span class="line">  .command(<span class="string">&quot;create &lt;app-name&gt;&quot;</span>)</span><br><span class="line">  .description(<span class="string">&quot;create a new project&quot;</span>)</span><br><span class="line">  .option(<span class="string">&quot;-f, --force&quot;</span>, <span class="string">&quot;overwrite target directory if it exist&quot;</span>)</span><br><span class="line">  .action(<span class="function">(<span class="params">name, options</span>) =&gt;</span> &#123;</span><br><span class="line">    create(name, options);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
+
+<p>​    简单介绍下commander的一些方法：</p>
+<ul>
+<li>command方法的作用是添加命令名称和参数：命令后面可跟用 &lt;&gt; 或 [] 包含的参数；命令的最后一个参数可以是可变的，在命令后面传入的参数会被传入到 <code>action</code> 的回调函数以及 <code>program.args</code> 数组中。</li>
+<li>description 方法是设置命令的描述。</li>
+<li>alias 方法设置命令简称。</li>
+<li>options 设置命令需要的参数。</li>
+</ul>
+<h5 id="7-询问用户获得所需数据"><a href="#7-询问用户获得所需数据" class="headerlink" title="7. 询问用户获得所需数据"></a>7. 询问用户获得所需数据</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; prompt &#125; <span class="keyword">from</span> <span class="string">&quot;inquirer&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> &#123; action &#125; = <span class="keyword">await</span> prompt([</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">name</span>: <span class="string">&quot;action&quot;</span>,</span><br><span class="line">          <span class="attr">type</span>: <span class="string">&quot;list&quot;</span>,</span><br><span class="line">          <span class="attr">message</span>: <span class="string">&quot;Target directory already exists Pick an action:&quot;</span>,</span><br><span class="line">          <span class="attr">choices</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">              <span class="attr">name</span>: <span class="string">&quot;Overwrite&quot;</span>,</span><br><span class="line">              <span class="attr">value</span>: <span class="string">&quot;overwrite&quot;</span>,</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">              <span class="attr">name</span>: <span class="string">&quot;Cancel&quot;</span>,</span><br><span class="line">              <span class="attr">value</span>: <span class="literal">false</span>,</span><br><span class="line">            &#125;,</span><br><span class="line">          ],</span><br><span class="line">        &#125;,</span><br><span class="line">      ]);</span><br></pre></td></tr></table></figure>
+
+<p>​    执行命令即可看到：</p>
+<p>![image-20210812000602752](/Users/liang.chen/Library/Application Support/typora-user-images/image-20210812000602752.png)</p>
+<p>其中的参数：</p>
+<ul>
+<li>type包括 input, number, confirm, list, checkbox；</li>
+<li>name是 需要获得的信息的key 名；    </li>
+<li>message是提示信息</li>
+<li>default是默认值</li>
+</ul>
+<h5 id="8-项目创建"><a href="#8-项目创建" class="headerlink" title="8. 项目创建"></a>8. 项目创建</h5><p>Step1. 通过远程拉取git仓库来获取模板列表：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> axios <span class="keyword">from</span> <span class="string">&quot;axios&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getRepoList</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> axios.get(<span class="string">&quot;https://api.github.com/orgs/nerv-templates/repos&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Step2. 询问用户选择模板：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="title">getRepo</span>(<span class="params"></span>)</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> repoList = <span class="keyword">await</span> wrapLoading(getRepoList, <span class="string">&quot;waiting fetch template&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (!repoList) <span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> repos = repoList.map(<span class="function">(<span class="params">repo</span>) =&gt;</span> repo.name);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> &#123; repo &#125; = <span class="keyword">await</span> prompt(&#123;</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&quot;repo&quot;</span>,</span><br><span class="line">      <span class="attr">type</span>: <span class="string">&quot;list&quot;</span>,</span><br><span class="line">      <span class="attr">choices</span>: repos,</span><br><span class="line">      <span class="attr">message</span>: <span class="string">&quot;Choose one of the following templates&quot;</span>,</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> repo;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p>Step3. 通过用户选择的模板来获取模板版本：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">getTagList</span>(<span class="params">repo</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> axios.get(<span class="string">`https://api.github.com/repos/nerv-templates/<span class="subst">$&#123;repo&#125;</span>/tags`</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Step4. 询问用户选择模板版本：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="title">getTag</span>(<span class="params">repo</span>)</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> tags = <span class="keyword">await</span> wrapLoading(getTagList, <span class="string">&quot;waiting fetch tag&quot;</span>, repo);</span><br><span class="line">    <span class="keyword">if</span> (!tags) <span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> tagsList = tags.map(<span class="function">(<span class="params">item</span>) =&gt;</span> item.name);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">const</span> &#123; tag &#125; = <span class="keyword">await</span> prompt(&#123;</span><br><span class="line">      <span class="attr">name</span>: <span class="string">&quot;tag&quot;</span>,</span><br><span class="line">      <span class="attr">type</span>: <span class="string">&quot;list&quot;</span>,</span><br><span class="line">      <span class="attr">choices</span>: tagsList,</span><br><span class="line">      <span class="attr">message</span>: <span class="string">&quot;Choose one of the following tags to create project&quot;</span>,</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> tag;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p>Step5. 通过downloadGitRepo下载远程模板：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="title">download</span>(<span class="params">repo, tag</span>)</span> &#123;</span><br><span class="line">    <span class="keyword">const</span> requestUrl = <span class="string">`nerv-templates/<span class="subst">$&#123;repo&#125;</span><span class="subst">$&#123;tag ? <span class="string">&quot;#&quot;</span> + tag : <span class="string">&quot;&quot;</span>&#125;</span>`</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">await</span> wrapLoading(</span><br><span class="line">      <span class="built_in">this</span>.downloadGitRepo,</span><br><span class="line">      <span class="string">&quot;waiting download template&quot;</span>,</span><br><span class="line">      requestUrl,</span><br><span class="line">      resolve(process.cwd(), <span class="built_in">this</span>.targetDir)</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="9-项目初始化"><a href="#9-项目初始化" class="headerlink" title="9. 项目初始化"></a>9. 项目初始化</h5><p>Step1. 根据用户输入的project name和author name修改package.json文件：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">revisePackageJson</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> path = process.cwd() + <span class="string">&quot;/&quot;</span> + name + <span class="string">&quot;/&quot;</span> + <span class="string">&quot;/package.json&quot;</span>;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve</span>) =&gt;</span> &#123;</span><br><span class="line">    fs.readFile(path, <span class="function">(<span class="params">err, data</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">if</span> (err) <span class="keyword">throw</span> err;</span><br><span class="line">      <span class="keyword">let</span> json = data.toString();</span><br><span class="line">      json = json.replace(<span class="regexp">/demoName/g</span>, name.trim());</span><br><span class="line">      fs.writeFile(path, <span class="keyword">new</span> Buffer.from(json), <span class="function">() =&gt;</span> &#123;</span><br><span class="line">        resolve();</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Step2. 执行npm install安装依赖：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> chalk <span class="keyword">from</span> <span class="string">&quot;chalk&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> ora <span class="keyword">from</span> <span class="string">&quot;ora&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> util <span class="keyword">from</span> <span class="string">&quot;util&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> child_process <span class="keyword">from</span> <span class="string">&quot;child_process&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> exec = util.promisify(child_process.exec);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> loadCmd = <span class="keyword">async</span> (cmd, text) =&gt; &#123;</span><br><span class="line">  <span class="keyword">let</span> loading = ora();</span><br><span class="line">  loading.start(<span class="string">`<span class="subst">$&#123;text&#125;</span>: executing...`</span>);</span><br><span class="line">  <span class="keyword">await</span> exec(cmd);</span><br><span class="line">  loading.succeed(<span class="string">`<span class="subst">$&#123;text&#125;</span>: completed!`</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">async</span> () =&gt; &#123;</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">await</span> loadCmd(<span class="string">`npm install`</span>, <span class="string">&quot;install dependencies&quot;</span>);</span><br><span class="line">  &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(symbol.error, chalk.red(<span class="string">&quot;init failed!&quot;</span>));</span><br><span class="line">    <span class="built_in">console</span>.log(symbol.error, chalk.red(err));</span><br><span class="line">    process.exit(<span class="number">1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>​    这样项目的初始化过程就完成啦。</p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>​    通过对脚手架的学习和实现，有如下收获：</p>
+<ul>
+<li><p>理解了脚手架的存在意义以及其在前端工程化中的作用</p>
+</li>
+<li><p>熟悉了常见的脚手架方案，了解了他们之间的差异和优缺点</p>
+</li>
+<li><p>掌握了多种脚手架开发工具的使用，可以通过commander.js处理命令行，通过download-git-repo处理下载，通过inquirer.js处理终端交互</p>
+<p>当然，我认为不论是什么脚手架，复杂的地方都不在于命令处理解析或者模板下载拷贝，这部分只占了它脚手架很小的部分。真正的核心还是在于各种模板的构建编译配置，而这还是需要加强对babel和webpack这些库的理解，在后续不断优化。    </p>
+</li>
+</ul>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2021 Leo<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
